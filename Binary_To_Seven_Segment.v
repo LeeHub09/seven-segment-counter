@@ -1,3 +1,7 @@
+// Author: Lee Woodend
+// Date: 23/05/2021
+// Descr: Converts 4-bit binary input to output 7-bit output to display the value of the binary input on a 7-segment display
+
 module Binary_To_Seven_Segment
 	(input i_Clk,
 	input [1:0] i_Binary_Number,
