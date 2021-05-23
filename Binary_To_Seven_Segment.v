@@ -25,7 +25,7 @@ module Binary_To_Seven_Segment
 	begin
 		if (i_Binary_Number == 0)
 		begin
-		// Display 0
+			// Display 0
 			r_Segment_A <= 1'b1;
 			r_Segment_B <= 1'b1;
 			r_Segment_C <= 1'b1;
@@ -70,8 +70,80 @@ module Binary_To_Seven_Segment
 			r_Segment_F <= 1'b0;
 			r_Segment_G <= 1'b1;	
 		end
-	end
+		else if (i_Binary_Number == 4)
+		begin
+			// Display 4
+			r_Segment_A <= 1'b0;
+			r_Segment_B <= 1'b1;
+			r_Segment_C <= 1'b1;
+			r_Segment_D <= 1'b0;
+			r_Segment_E <= 1'b0;
+			r_Segment_F <= 1'b1;
+			r_Segment_G <= 1'b1;	
+		end
 
+		else if (i_Binary_Number == 5)
+		begin
+			// Display 5
+			r_Segment_A <= 1'b1;
+			r_Segment_B <= 1'b1;
+			r_Segment_C <= 1'b1;
+			r_Segment_D <= 1'b0;
+			r_Segment_E <= 1'b0;
+			r_Segment_F <= 1'b1;
+			r_Segment_G <= 1'b1;	
+		end
+
+		else if (i_Binary_Number == 6)
+		begin
+			// Display 6
+			r_Segment_A <= 1'b1;
+			r_Segment_B <= 1'b0;
+			r_Segment_C <= 1'b1;
+			r_Segment_D <= 1'b1;
+			r_Segment_E <= 1'b1;
+			r_Segment_F <= 1'b1;
+			r_Segment_G <= 1'b1;	
+		end	
+
+		else if (i_Binary_Number == 7)
+		begin
+			// Display 7
+			r_Segment_A <= 1'b1;
+			r_Segment_B <= 1'b1;
+			r_Segment_C <= 1'b1;
+			r_Segment_D <= 1'b0;
+			r_Segment_E <= 1'b0;
+			r_Segment_F <= 1'b0;
+			r_Segment_G <= 1'b0;	
+		end
+		
+		else if (i_Binary_Number == 8)
+		begin
+			// Display 8
+			r_Segment_A <= 1'b1;
+			r_Segment_B <= 1'b1;
+			r_Segment_C <= 1'b1;
+			r_Segment_D <= 1'b1;
+			r_Segment_E <= 1'b1;
+			r_Segment_F <= 1'b1;
+			r_Segment_G <= 1'b1;	
+		end	
+
+		else if (i_Binary_Number == 9)
+		begin
+			// Display 9
+			r_Segment_A <= 1'b1;
+			r_Segment_B <= 1'b1;
+			r_Segment_C <= 1'b1;
+			r_Segment_D <= 1'b1;
+			r_Segment_E <= 1'b0;
+			r_Segment_F <= 1'b1;
+			r_Segment_G <= 1'b1;	
+		end
+	end
+	
+	// Assign segment states registers to outputs
 	assign o_Segment_A = r_Segment_A;
 	assign o_Segment_B = r_Segment_B;
 	assign o_Segment_C = r_Segment_C;
