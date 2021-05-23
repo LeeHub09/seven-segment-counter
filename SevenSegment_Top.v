@@ -1,3 +1,7 @@
+// Author: Lee Woodend
+// Date: 23/05/2021
+// Descr: Increments the digit on a 7-segment from zero to nine each time a button is pressed
+
 module Seven_Segment_Top
 	(input  i_Clk,
 	input  i_Switch_1,
@@ -12,7 +16,7 @@ module Seven_Segment_Top
 
 	wire w_Switch_1;
 	reg r_Switch_1 = 1'b0;
-	reg [1:0] r_Count = 2'b00;
+	reg [3:0] r_Count = 4'b0000;
 	
 	wire w_Segment2_A;
 	wire w_Segment2_B;
@@ -36,7 +40,7 @@ module Seven_Segment_Top
  
 		if (w_Switch_1 == 1'b1 && r_Switch_1 == 1'b0)
     		begin
-			if (r_Count >= 3)
+			if (r_Count >= 9)
 				r_Count <= 0;
 			else
 				r_Count <= r_Count + 1;
