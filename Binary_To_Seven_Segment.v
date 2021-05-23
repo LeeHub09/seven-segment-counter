@@ -86,9 +86,9 @@ module Binary_To_Seven_Segment
 		begin
 			// Display 5
 			r_Segment_A <= 1'b1;
-			r_Segment_B <= 1'b1;
+			r_Segment_B <= 1'b0;
 			r_Segment_C <= 1'b1;
-			r_Segment_D <= 1'b0;
+			r_Segment_D <= 1'b1;
 			r_Segment_E <= 1'b0;
 			r_Segment_F <= 1'b1;
 			r_Segment_G <= 1'b1;	
