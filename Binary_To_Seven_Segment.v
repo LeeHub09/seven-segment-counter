@@ -4,7 +4,7 @@
 
 module Binary_To_Seven_Segment
 	(input i_Clk,
-	input [1:0] i_Binary_Number,
+	input [3:0] i_Binary_Number,
 	output o_Segment_A,
 	output o_Segment_B,
 	output o_Segment_C,
